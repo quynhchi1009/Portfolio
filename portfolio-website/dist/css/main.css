@@ -1,14 +1,10 @@
-/**
- * Block: Navbar
- *
- * @format
- */
+/** @format */
 
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -47,5 +43,104 @@
     }
     50% {
         transform: translateY(10px);
+    }
+}
+
+/* Portfolio Styling */
+.portfolio {
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+/* Individual Sections */
+.portfolio__section {
+    position: relative;
+    height: 200vh;
+}
+
+.portfolio__section:last-child {
+    height: 100vh;
+}
+
+.portfolio__image {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+    opacity: 1;
+}
+
+.portfolio__image img {
+    max-width: 80%;
+}
+
+.portfolio__image--dimmed {
+    opacity: 0.52;
+}
+
+.portfolio__text {
+    position: absolute;
+    top: 100vh;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    font-size: 5rem;
+}
+
+.portfolio__text--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer Styling */
+.portfolio__footer {
+    background-color: #f5f5f5;
+    color: #000;
+    font-family: Arial, sans-serif;
+    padding: 0.625rem 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__info {
+    width: 100%;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__info-left,
+.footer__info-center,
+.footer__info-right {
+    flex: 1;
+    text-align: left;
+}
+
+.footer__info-left p {
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+.footer__info-center ul {
+    list-style: none;
+    padding: 0;
+
+    & li {
+        margin: 0.5rem 0;
+        font-size: 0.875rem;
+        & a {
+            text-decoration: none;
+            color: #000;
+        }
     }
 }
