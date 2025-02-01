@@ -2,16 +2,32 @@
 
 @import "variables";
 
+/* Root font-size for rem scaling */
+:root {
+    font-size: 16px; /* Default browser size */
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf"),
+        url(../assets/fonts/Poppins/Poppins-Medium.ttf) format("ttf"),
+        url(../assets/fonts/Poppins/Poppins-MediumItalic.ttf) format("ttf"),
+        url(../assets/fonts/Poppins/Poppins-Bold.woff) format("ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf) format("ttf");
+}
+
 // Global Styles
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-}
-
-/* Root font-size for rem scaling */
-:root {
-    font-size: 16px; /* Default browser size */
 }
