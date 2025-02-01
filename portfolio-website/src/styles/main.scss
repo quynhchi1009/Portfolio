@@ -1,0 +1,37 @@
+// This file contains the main SCSS stylesheet for the portfolio website.
+// It imports other SCSS files and contains styles for the portfolio website.
+
+@import 'variables';
+
+// Global Styles
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+// Header Styles
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+// Main Content Styles
+main {
+    padding: 20px;
+}
+
+// Footer Styles
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

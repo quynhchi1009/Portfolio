@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A portfolio website showcasing projects and skills.",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "sass src/styles/main.scss dist/css/main.css --no-source-map",
+    "watch": "sass --watch src/styles/main.scss:dist/css/main.css"
+  },
+  "dependencies": {
+    "sass": "^1.32.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "portfolio",
+    "website",
+    "scss",
+    "html"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
