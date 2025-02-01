@@ -1,1 +1,51 @@
-/* This file is the compiled CSS output from the SCSS files. */
+/**
+ * Block: Navbar
+ *
+ * @format
+ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar__item {
+    font-size: 14px;
+}
+
+.navbar__smiley {
+    font-size: 16px;
+}
+
+/* Block: Arrows Section */
+.arrows-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.arrows-container__arrow {
+    font-size: 30px;
+    font-weight: bold;
+    animation: arrows-container__arrow--bounce 1s infinite;
+}
+
+/* Modifier: Bounce Animation */
+@keyframes arrows-container__arrow--bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
