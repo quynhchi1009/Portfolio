@@ -3,6 +3,13 @@
   font-size: 16px; /* Default browser size */
 }
 
+*,
+*::before,
+*::after {
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+}
+
 @font-face {
   font-family: "Poppins";
   src: url(../assets/fonts/Poppins/Poppins-Regular.ttf) format("ttf"),
@@ -30,13 +37,6 @@ body {
 
 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.85);
-}
-
-*,
-*::before,
-*::after {
-  font-family: "Poppins", sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 
