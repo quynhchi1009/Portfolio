@@ -320,3 +320,7 @@ a {
     display: none;
   }
 }
+
+.demo-section {
+  margin: 4rem 0;
+}
