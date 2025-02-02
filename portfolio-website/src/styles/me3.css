@@ -1,0 +1,59 @@
+.demo-section {
+  margin: 4rem 0;
+}
+.overview-section {
+  gap: 1rem;
+}
+
+.overview-section__subheadline {
+  padding-bottom: 10rem;
+}
+
+.overview-section__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.overview-section__image,
+.overview-section__logo {
+  max-width: 80%;
+}
+
+.ux-research-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 4rem;
+}
+
+.ux-research-section__description,
+.ux-research-section__subheadline {
+  margin: 0;
+}
+
+.features-section__details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.video-section {
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
+.features-section__extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 16rem;
+  margin-right: 4rem;
+  height: 100%;
+}
+
+.result__image {
+  padding: 0 !important;
+}
