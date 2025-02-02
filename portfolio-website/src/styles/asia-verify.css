@@ -24,7 +24,8 @@
 .content__text,
 .overview-section__subheadline,
 .ux-research-section__subheadline,
-.approach-section__subheadline {
+.approach-section__subheadline,
+.result__subheadline {
   font-size: 0.875rem;
   color: #545454;
   text-transform: uppercase;
@@ -72,12 +73,12 @@
   }
 }
 
-.result__metrics {
+.result-section {
   & .metrics__number {
     font-weight: 600;
   }
-
   img {
     max-width: 100%;
+    padding-bottom: 10rem;
   }
 }
