@@ -1,0 +1,83 @@
+/* Main Section */
+.main {
+  text-align: center;
+  padding: 3rem 1.875rem;
+}
+
+.main h1,
+.main p.content__text {
+  margin: 5rem 0 0.625rem 0;
+}
+
+.main h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.overview-section,
+.ux-research-section,
+.approach-section,
+.result-section {
+  margin: 5rem 0 10rem 0;
+}
+
+.content__text,
+.overview-section__subheadline,
+.ux-research-section__subheadline,
+.approach-section__subheadline {
+  font-size: 0.875rem;
+  color: #545454;
+  text-transform: uppercase;
+}
+
+.content__description,
+.content__team,
+.overview-section,
+.ux-research-section,
+.approach-section,
+.result__content {
+  text-align: left;
+}
+
+.overview-section__description,
+.ux-research-section__description,
+.approach-section__description,
+.result__description {
+  margin: 1.25rem 0;
+}
+
+.content__team {
+  margin-top: 4rem;
+}
+
+.video-section {
+  margin: 10rem 0;
+  img {
+    max-width: 50%;
+  }
+}
+
+.ux-research-section__text-wrapper {
+  background-color: #016753;
+}
+
+.ux-research-section__text {
+  color: #ffffff;
+  padding: 0 1.25rem;
+}
+
+.approach-section {
+  img {
+    max-width: 100%;
+  }
+}
+
+.result__metrics {
+  & .metrics__number {
+    font-weight: 600;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

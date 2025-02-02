@@ -31,3 +31,22 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector("footer").innerHTML = data;
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll(".video");
+
+  function checkVisibility() {
+    videos.forEach((video) => {
+      const rect = video.getBoundingClientRect();
+      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  window.addEventListener("resize", checkVisibility);
+  checkVisibility();
+});

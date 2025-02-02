@@ -10,39 +10,133 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/asia-verify.css" />
     <link rel="stylesheet" href="../dist/css/main.css" />
   </head>
   </head>
   <body>
     <nav></nav>
-    <main>
-      <section>
-        <h2>About Us</h2>
-        <p>
-          Welcome to Asia Verify. We provide verification services across Asia.
-        </p>
-      </section>
-      <section>
-        <h2>Services</h2>
-        <ul>
-          <li>Identity Verification</li>
-          <li>Document Verification</li>
-          <li>Background Checks</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Contact Us</h2>
-        <form action="/submit" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
+    <!-- Main Content -->
+  <main class="main">
+    <div class="content__description d-flex flex-row justify-content-between align-items-center w-100">
+      <p class="content__text">
+      Automate KYC, KYB, UBO, AML <br/>
+      and Monitoring processes and get <br/>
+      access to real-time quality data of <br/>
+      APAC business partners, <br/>
+      customers, and beneficial owners. <br/>
+      </p>
+      <h1 class="content__title">Asia Verify</h1>
+    </div>
+    <div class="content__team d-flex flex-row justify-content-between align-items-center w-100">
+      <p class="content__team-members">
+      Designer: Quynh Chi Lai, Celine Ong <br/>
+      Product Manager: Joanne Ng, Kurtis Ma <br/>
+      </p>
+      <p class="content__duration">---------- 4 months</p>
+    </div>
+
+    <div class="video-section d-flex flex-row justify-content-between align-items-center w-100">
+      <img
+            src="./assets/img/asia-verify/Sign-up.gif"
+            alt="AsiaVerify Sign Up Redesign 2024-2025 - Quynh Chi Lai" />
+      <img
+            src="./assets/img/asia-verify/report-preview.gif"
+            alt="AsiaVerify Report Preview Page Redesign 2024-2025 - Quynh Chi Lai" />
+    </div>
+
+    <div class="overview-section">
+      <h3 class="overview-section__subheadline">Background</h3>
+      <h2 class="overview-section__headline">Upleveling AsiaVerify’s onboarding process</h2>
+      <p class="overview-section__description">
+        So far, the AsiaVerify homepage has been filled with average content. Businesses were stuck trying to figure out which verification package they needed, often giving up before they could even try the service.
+        We changed that. We want to make the onboarding process a great place to learn and explore AsiaVerify further.      </p>
+    </div>
+
+    <div class="ux-research-section d-flex flex-wrap">
+      <div class="ux-research-section__content col-6">
+      <h3 class="ux-research-section__subheadline">UX Research</h3>
+      <h2 class="ux-research-section__headline">AsiaVerify users want to evaluate and start using verification services without confusion</h2>
+      <p class="ux-research-section__description">
+          Our research showed that new users often felt lost. They wanted to understand what AsiaVerify’s services included but were overwhelmed by technical terms and a lack of clarity. Without trial reports or previews, it was hard for them to decide if the platform met their needs. Many users gave up before fully exploring the platform.      </p>
+      </div>
+      <div class="ux-research-section__empty col-6"></div>
+      <div class="ux-research-section__empty col-6"></div>
+      <div class="ux-research-section__text-container col-6 d-flex flex-column justify-content-center align-items-center">
+      <div class="ux-research-section__text-wrapper p-3 m-3 d-flex flex-wrap">
+        <div class="col-6">
+          <p class="ux-research-section__text">Create an account quickly and easily</p>
+          <p class="ux-research-section__text">Explore platform features and tools</p>
+          <p class="ux-research-section__text">Verify data relevance for specific needs</p>
+        </div>
+        <div class="col-6">
+          <p class="ux-research-section__text">Access support for onboarding assistance</p>
+          <p class="ux-research-section__text">Compare subscription plans and benefits</p>
+          <p class="ux-research-section__text">Preview a trial report to evaluate platform's value</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="approach-section">
+      <h3 class="approach-section__subheadline">Approach</h3>
+      <h2 class="approach-section__headline">Rapid Iteration Through User-Centered Design</h2>
+      <p class="approach-section__description">
+        We started by analyzing user friction points in the existing portal. Through quick design experiments, we transformed the complex onboarding into a guided experience that introduces a clear video tour, simplified report descriptions, and visual examples that help users understand exactly what they're getting. We continuously gathered feedback on the new onboarding flow and iterated on the pricing presentation to ensure users could confidently choose the right plan for their needs.      </p>
+    <img
+            src="./assets/img/homepage/Animated-AsiaVerify.gif"
+            alt="AsiaVerify Real time UBO, KYC & KYB report across Asia 2024-2025" />
+    </div>
+
+    <div class="result-section d-flex flex-wrap">
+      <div class="result col-12 d-flex flex-row">
+        <div class="result__content col-6">
+          <h3 class="result__subheadline">01</h3>
+          <h2 class="result__headline">Increased User Sign-Up Rate</h3>
+          <p class="result__description">A simplified onboarding process reduced friction for users during sign-up by removing unnecessary steps and providing clear instructions. The design ensured that users could navigate the process with ease.</p>
+            <p class="result__metrics">
+            <span class="metrics__number">+25%</span> increase in sign-up completions<br/>  
+            <span class="metrics__number">-15%</span> reduction in time spent on onboarding
+            </p>
+        </div>
+        <div class="result__image col-6">
+          <img src="./assets/img/asia-verify/Sign-up.gif" alt="AsiaVerify Sign Up Redesign 2024-2025 - Quynh Chi Lai" />
+        </div>
+      </div>
+      <div class="result col-12 d-flex flex-row">
+        <div class="result__content col-6">
+          <h3 class="result__subheadline">Result 2 Subheadline</h3>
+          <h2 class="result__headline">Result 2 Headline</h2>
+          <p class="result__description">Description for result 2.</p>
+        </div>
+        <div class="result__image col-6">
+          <img src="./assets/img/result2.jpg" alt="Result 2 Image"/>
+        </div>
+      </div>
+      <div class="result col-12 d-flex flex-row">
+        <div class="result__content col-6">
+          <h3 class="result__subheadline">Result 3 Subheadline</h3>
+          <h2 class="result__headline">Result 3 Headline</h2>
+          <p class="result__description">Description for result 3.</p>
+        </div>
+        <div class="result__image col-6">
+          <img src="./assets/img/result3.jpg" alt="Result 3 Image" style="max-width: 50%;" />
+        </div>
+      </div>
+      <div class="result col-12 d-flex flex-row">
+        <div class="result__content col-6">
+          <h3 class="result__subheadline">Result 4 Subheadline</h3>
+          <h2 class="result__headline">Result 4 Headline</h2>
+          <p class="result__description">Description for result 4.</p>
+        </div>
+        <div class="result__image col-6">
+          <img src="./assets/img/result4.jpg" alt="Result 4 Image" style="max-width: 50%;" />
+        </div>
+      </div>
+    </div>
+
+
+  </main>
     <footer></footer>
     <!-- Bootstrap JS Bundle -->
     <script
