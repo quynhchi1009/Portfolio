@@ -61,32 +61,6 @@ a {
   font-size: 1.1rem;
 }
 
-/* Block: Arrows Section */
-.arrows-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  gap: 20px;
-}
-
-.arrows-container__arrow {
-  font-size: 4rem;
-  font-weight: bold;
-  animation: arrows-container__arrow--bounce 1s infinite;
-}
-
-/* Modifier: Bounce Animation */
-@keyframes arrows-container__arrow--bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-
 /* Portfolio Styling */
 .portfolio {
   display: flex;
