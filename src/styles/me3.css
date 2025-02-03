@@ -2,7 +2,7 @@
   gap: 1rem;
 }
 
-.overview-section__subheadline {
+.overview-section__headline {
   padding-bottom: 10rem;
 }
 
@@ -26,8 +26,12 @@
 }
 
 .ux-research-section__description,
-.ux-research-section__subheadline {
+.ux-research-section__headline {
   margin: 0;
+}
+
+.features-section__headline {
+  margin-bottom: 2rem;
 }
 
 .features-section__details {

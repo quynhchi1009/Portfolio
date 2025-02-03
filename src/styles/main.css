@@ -48,17 +48,17 @@ a {
   padding: 0.625rem 1.875rem;
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .navbar__item {
-  font-size: 14px;
+  font-size: 1.1rem;
 }
 
 .navbar__smiley {
-  font-size: 16px;
+  font-size: 1.1rem;
 }
 
 /* Block: Arrows Section */
@@ -71,7 +71,7 @@ a {
 }
 
 .arrows-container__arrow {
-  font-size: 30px;
+  font-size: 4rem;
   font-weight: bold;
   animation: arrows-container__arrow--bounce 1s infinite;
 }
@@ -189,7 +189,7 @@ a {
 .footer__info-left,
 .footer__info-center,
 .footer__info-right {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -235,7 +235,7 @@ a {
 .approach-section__subheadline,
 .result__subheadline,
 .features-section__subheadline {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #545454;
   text-transform: uppercase;
 }
@@ -257,7 +257,7 @@ a {
 }
 
 .content__team {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 16rem;
   font-style: italic;
   color: #545454;
@@ -307,7 +307,7 @@ a {
 }
 
 .not-found p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0.5rem 0 0;
 }
 
