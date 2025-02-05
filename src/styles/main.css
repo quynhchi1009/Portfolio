@@ -84,7 +84,7 @@ a {
 /* Right Column */
 .portfolio__slider {
   margin-left: 40%;
-  width: 65%;
+  width: 60%;
   position: relative;
 }
 
@@ -99,9 +99,13 @@ a {
 .portfolio__slide {
   position: relative;
   height: 50%;
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
+
+  &:first-child {
+    padding-top: 4rem;
+  }
 }
 
 .portfolio__image {
@@ -109,10 +113,6 @@ a {
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
-}
-
-.portfolio__slide:hover .portfolio__image {
-  transform: scale(1.05);
 }
 
 .portfolio__title-overlay {
@@ -126,10 +126,11 @@ a {
   margin-right: auto;
   left: 0;
   right: 0;
-  opacity: 0;
   text-align: left;
   font-size: 1rem;
   word-wrap: break-word;
+  opacity: 0;
+  visibility: hidden;
   transform: translateY(100%);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
 }
