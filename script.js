@@ -1,23 +1,3 @@
-// Select elements
-const textSections = document.querySelectorAll(".portfolio__text");
-const imageSections = document.querySelectorAll(".portfolio__image");
-
-// Add scroll event listener
-window.addEventListener("scroll", () => {
-  textSections.forEach((text, index) => {
-    const sectionTop = text.getBoundingClientRect().top;
-    const triggerPoint = window.innerHeight * 0.8;
-
-    if (sectionTop < triggerPoint) {
-      text.classList.add("portfolio__text--visible");
-      imageSections[index].classList.add("portfolio__image--dimmed");
-    } else {
-      text.classList.remove("portfolio__text--visible");
-      imageSections[index].classList.remove("portfolio__image--dimmed");
-    }
-  });
-});
-
 // Check screen size and redirect logic
 document.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.pathname; // Current page path
@@ -77,4 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkVisibility);
   window.addEventListener("resize", checkVisibility);
   checkVisibility();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Check if the current URL ends with '/src/index.html'
+  if (window.location.pathname.endsWith("/src/index.html")) {
+    // Redirect to '/index.html'
+    window.location.href = "/index.html";
+  }
 });
