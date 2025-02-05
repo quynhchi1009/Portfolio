@@ -68,7 +68,8 @@ a {
 .portfolio {
   display: flex;
   align-items: flex-start;
-  min-height: 100vh;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* Left Column */
@@ -77,15 +78,25 @@ a {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 30%;
+  width: 40%;
   padding-left: 1.875rem;
+  flex-direction: column;
+}
+
+.portfolio__text h6 {
+  font-size: 2rem;
+}
+
+.portfolio__subtitle {
+  color: #8b8b8b;
 }
 
 /* Right Column */
 .portfolio__slider {
-  margin-left: 40%;
-  width: 60%;
   position: relative;
+  height: calc(100vh - 45px);
+  margin-left: 50%;
+  width: 50%;
 }
 
 .portfolio__slider-track {
@@ -93,19 +104,16 @@ a {
   top: 0;
   display: flex;
   flex-direction: column;
+  padding: 12rem 0;
   transition: transform 0.3s ease-in-out;
 }
 
 .portfolio__slide {
   position: relative;
   height: 50%;
-  padding: 2rem 0;
+  padding-bottom: 2.5rem;
   display: flex;
   justify-content: center;
-
-  &:first-child {
-    padding-top: 4rem;
-  }
 }
 
 .portfolio__image {
@@ -117,11 +125,11 @@ a {
 
 .portfolio__title-overlay {
   position: absolute;
-  width: 90%;
-  bottom: 0;
+  width: 84%;
+  bottom: 3rem;
   background: rgba(82, 79, 79, 0.85);
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -148,49 +156,27 @@ a {
 
 /* Footer and MORE Section Styling */
 .portfolio__footer {
-  height: 100vh; /* Occupies full viewport height */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.625rem 1.875rem;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer__more {
-  flex: 1; /* Makes it fill space proportionally */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .footer__info {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
-}
-
-.footer__info-left,
-.footer__info-center,
-.footer__info-right {
+  margin: 0.5rem 0;
   font-size: 1.1rem;
   line-height: 1.5;
 }
 
-.footer__info-left p {
-  margin: 0.5rem 0;
-}
-
-.footer__info-center ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer__info-center ul li {
-  margin: 0.5rem 0;
+.footer__info-right span {
+  color: #8b8b8b;
 }
 
 /* Main Section */
