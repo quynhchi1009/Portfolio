@@ -187,12 +187,14 @@ a {
 
 .main h1,
 .main p.content__text {
-  margin: 5rem 0 0.625rem 0;
+  margin: 8rem 0 0.625rem 0;
+  width: 40%;
 }
 
 .main h1 {
   font-size: 5rem;
   font-weight: 400;
+  text-align: right;
 }
 
 .overview-section,
@@ -211,6 +213,10 @@ a {
   font-size: 1rem;
   color: #545454;
   text-transform: uppercase;
+}
+
+.content__text {
+  text-transform: none;
 }
 
 .content__description,
