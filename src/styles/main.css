@@ -44,6 +44,16 @@ a {
   color: rgba(0, 0, 0, 0.85);
 }
 
+hr {
+  height: 2px;
+  visibility: hidden;
+  margin-bottom: -1px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .navbar {
   position: fixed;
   z-index: 999;
@@ -197,16 +207,14 @@ a {
   text-align: right;
 }
 
-.overview-section,
-.ux-research-section,
+.text-container,
 .approach-section,
 .result-section {
-  margin: 5rem 0 10rem 0;
+  margin: 4rem 0;
 }
 
 .content__text,
-.overview-section__subheadline,
-.ux-research-section__subheadline,
+.text-container__subheadline,
 .approach-section__subheadline,
 .result__subheadline,
 .features-section__subheadline {
@@ -221,15 +229,14 @@ a {
 
 .content__description,
 .content__team,
-.overview-section,
-.ux-research-section,
+.text-container,
 .approach-section,
 .result__content,
 .features-section {
   text-align: left;
 }
 
-.overview-section__description,
+.text-container__description,
 .approach-section__description,
 .result__description {
   margin: 1.25rem 0;
@@ -240,20 +247,23 @@ a {
   margin-top: 16rem;
   font-style: italic;
   color: #545454;
+  & a {
+    text-decoration: underline;
+  }
 }
 
 .video-section {
   margin: 12rem 0;
-  img {
+  & img {
     max-width: 50%;
   }
 }
 
-.ux-research-section__text-wrapper {
+.text-container__text-wrapper {
   background-color: #016753;
 }
 
-.ux-research-section__text {
+.text-container__text {
   color: #ffffff;
   padding: 0 1.25rem;
 }
@@ -301,5 +311,5 @@ a {
 }
 
 .demo-section {
-  margin: 8rem 0;
+  margin: 4rem 0;
 }

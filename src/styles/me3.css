@@ -1,33 +1,13 @@
-.overview-section {
-  gap: 1rem;
-}
-
-.overview-section__headline {
-  padding-bottom: 10rem;
-}
-
-.overview-section__details {
+.text-container__details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.overview-section__image,
-.overview-section__logo {
+.text-container__image,
+.text-container__logo {
   max-width: 80%;
-}
-
-.ux-research-section {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 4rem;
-}
-
-.ux-research-section__description,
-.ux-research-section__headline {
-  margin: 0;
 }
 
 .features-section__headline {
@@ -50,11 +30,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-left: 16rem;
+  margin-left: 8rem;
   margin-right: 4rem;
   height: 100%;
-}
-
-.result__image {
-  padding: 0 !important;
 }
