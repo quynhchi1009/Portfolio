@@ -49,6 +49,11 @@ hr {
   margin-bottom: -1px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -211,14 +216,12 @@ hr {
   text-align: right;
 }
 
-.text-container,
-.result-section {
+.text-container {
   margin: 4rem 0;
 }
 
 .content__text,
-.text-container__subheadline,
-.result__subheadline {
+.text-container__subheadline {
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -230,13 +233,11 @@ hr {
 .content__description,
 .content__team,
 .text-container,
-.result__content,
 .features-section {
   text-align: left;
 }
 
-.text-container__description,
-.result__description {
+.text-container__description {
   margin: 1.25rem 0;
 }
 
@@ -264,14 +265,8 @@ hr {
   padding: 0 1.25rem;
 }
 
-.result-section {
-  & .metrics__number {
-    font-weight: 600;
-  }
-  img {
-    max-width: 100%;
-    padding-bottom: 10rem;
-  }
+& .metrics__number {
+  font-weight: 600;
 }
 
 .not-found {
