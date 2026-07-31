@@ -216,10 +216,55 @@
       <div class="text-container">
         <h2 class="text-container__headline">Design Approach</h2>
         <p class="text-container__description">
-          We applied Gestalt and usability principles to create a "My Plan
-          Dashboard" that's visually coherent and functionally efficient,
-          adapting its content and interactions to match each user's
-          subscription state while staying consistent and clear.
+          Working from the PM's business requirements, I started by prompting
+          Claude, GPT, and Gemini to generate initial dashboard directions and
+          a baseline of must-have elements. It was a fast way to structure the
+          problem, but the output fell short in three ways:
+        </p>
+        <ul>
+          <li>
+            AI couldn't generate visually critical moments — the specific
+            states and emphasis that make a dashboard feel trustworthy at a
+            glance, not just complete.
+          </li>
+          <li>
+            It had no visibility into how our actual competitors were solving
+            this problem — only what I described to it, filtered through my
+            own assumptions.
+          </li>
+          <li>
+            It couldn't tell me which of those competitor solutions had
+            actually succeeded, or how that success was measured.
+          </li>
+        </ul>
+        <p class="text-container__description">
+          So I used the AI output as a starting point for research, not as a
+          direction. I moved to Mobbin to study how direct competitors — GBG,
+          KYB Asian, Mews — handled subscription and compliance dashboards,
+          then widened the search to products known for strong data
+          presentation: Cake Equity, Stripe, Asana, major banking apps, and
+          PowerBI. I wasn't just looking at who else was in our space — I was
+          looking at who had already solved this specific kind of problem
+          well.
+        </p>
+        <p class="text-container__description">
+          <span class="bold">Not every strong pattern made it in.</span>
+          Several drafts adapted directly from these benchmarks were dropped
+          at review. Visually, they had proven successful elsewhere — but the
+          audience wasn't the same. Our users weren't just checking a balance;
+          they were deciding how to make a fixed budget stretch across a set
+          number of reports, on a specific plan tier. And AsiaVerify's own
+          goal wasn't only to satisfy that user — it was to do so in a way
+          that also encouraged upgrades and renewals. That difference in
+          audience and business incentive is what decided which patterns we
+          kept and which we rebuilt from scratch.
+        </p>
+        <p class="text-container__description">
+          What we kept and adapted, we applied through Gestalt and usability
+          principles to create a "My Plan Dashboard" that's visually coherent
+          and functionally efficient, adapting its content and interactions to
+          match each user's subscription state while staying consistent and
+          clear.
         </p>
         <ul>
           <li>
@@ -388,6 +433,16 @@
           that:
         </p>
         <ul>
+          <li>
+            <span class="bold">Benchmarking is a starting point, not a
+            template:</span> Studying Cake Equity, Stripe, Asana, and PowerBI
+            taught us a lot about how to present dense data clearly — but
+            copying what worked for them would have missed the point. Their
+            users weren't managing a fixed report budget across plan tiers,
+            and their businesses weren't trying to nudge users toward upgrades
+            at the same time. The visual language had to be earned again for
+            our own users and our own business model, not inherited wholesale.
+          </li>
           <li>
             <span class="bold">Customization is Key:</span> Tailoring dashboard
             content to reflect various subscription states—whether active,
